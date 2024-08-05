@@ -9,7 +9,7 @@ from utils_LP import character_recog_CNN, crop_n_rotate_LP
 
 Min_char = 0.01
 Max_char = 0.09
-video_path = 'data/video/clip3.2.mp4'
+video_path = 'data/video/1.mp4'
 CHAR_CLASSIFICATION_WEIGHTS = './src/weights/weight.h5'
 LP_weights = 'LP_detect_yolov7_500img.pt'
 

@@ -32,7 +32,7 @@ def detect(model, image, device, imgsz=640, conf_thres=0.25,
     stride = int(model.stride.max())  # model stride
     imgsz = check_img_size(imgsz, s=stride)  # check img_size
 
-    model.half()  # to FP16
+    # model.half()  # to FP16
 
     # Transform image to predict
     img, im0 = transform_img(image)
@@ -92,8 +92,8 @@ def main():
     final_pred = detect(model, source_img,device, imgsz=640)
     print('final_pred', final_pred)
 
-    # cv2.imshow('output', cv2.resize(source_img, dsize=None, fx=0.5, fy=0.5))
-    # cv2.waitKey(0)
+    cv2.imshow('output', cv2.resize(source_img, dsize=None, fx=0.5, fy=0.5))
+    cv2.waitKey(0)
 
 
 if __name__ == '__main__':

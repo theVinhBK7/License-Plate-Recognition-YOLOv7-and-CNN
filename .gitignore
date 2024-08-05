@@ -1,0 +1,3 @@
+__pycache__
+src/traced_model.pt
+LP_detect_yolov7_500img.pt
